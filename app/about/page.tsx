@@ -1,0 +1,8 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+
+export const metadata: Metadata = { title: "About", description: "MIO Studio's approach to thoughtful 3D-printed objects and product design." };
+
+export default function AboutPage() {
+  return <><div className="shell"><header className="page-hero"><p className="eyebrow">About MIO Studio</p><h1 className="page-title">Designed with intent.<br />Made layer by layer.</h1><p className="lede">MIO Studio is a 3D-printing and product-design studio in Kozhikode. We care about useful forms, clear choices and the small details that make an object feel considered.</p></header></div><section className="process-band section"><div className="shell content-grid"><div><p className="eyebrow" style={{ color: "#ff8b6e" }}>The point of view</p><h2 className="section-title">Not more things. Better reasons.</h2></div><div className="prose"><p>We use additive making to explore objects that solve a problem, carry a personal detail or simply bring character to a familiar routine.</p><p>This site deliberately avoids invented founder stories, certifications and production claims. Capabilities, materials and lead times will be published only after the studio approves them.</p></div></div></section><section className="shell section"><div className="service-panel"><div className="service-visual" /><div className="service-copy"><p className="eyebrow">Have something in mind?</p><h2 className="section-title">Start with the problem.</h2><p className="lede">A file is helpful, but not required. Describe the use, size and context; the studio can review what comes next.</p><Link className="button button-accent" href="/custom-3d-printing/request">Start a custom request</Link></div></div></section></>;
+}
